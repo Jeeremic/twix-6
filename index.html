@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./starter-code/assets/favicon-32x32.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <title>GitHub Search</title>
+</head>
+<body class="theme-dark">
+    <div class="container">
+
+        <!-- DARK -->
+        <div class="change">
+            <h1 class="finder">devfinder</h1>
+            <div class="change-img">
+                dark 
+                <img src="./starter-code/assets/icon-moon.svg">
+            </div>
+            <div class="change-img2" >
+                lights
+                <img src="./starter-code/assets/icon-sun.svg">
+            </div>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="search">
+            <div class="search-img">
+                <img src="./starter-code/assets/icon-search.svg">
+            </div>
+            <div class="input-button">
+                <input type="text" id="checking" placeholder="Search GitHub username...">
+                <p class="error">No results</p>
+                <button id="button" type="submit" value="Submit">Search</button>
+            </div>
+        </div>
+
+        <!-- MAIN CARD -->
+        <div class="main">
+            <div class="top">
+                <img id="avatar" src="./image-daniel.jpg">
+                <div class="user">
+                    <h1 id="name">The Octocar</h1>
+                    <a id=link href="www.link.com">@autocat</a>
+                    <p class="block" id="date-mobile" >Joined 25 Jan 2011</p>
+                    <h2 class="primary" id="bio">This profile has no bio</h2>
+                </div>
+                <div class="date">
+                    <h2 id="date">Joined 25 Jan 2011</h2>
+                </div>
+            </div>
+            <div class="secound">
+                <p id="bioMobile">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Tenetur aliquam quo mollitia eius soluta.
+            </div>
+            <div class="data">
+                <div class="userFolow">
+                    <div class="box">
+                        <h4>Repos</h4>
+                        <p id="repos">8</p>
+                    </div>
+                    <div class="box">
+                        <h4>Followers</h4>
+                        <p id="followers">3333</p>
+                    </div>
+                    <div class="box">
+                        <h4>Following</h4>
+                        <p id="following">9</p>
+                    </div>
+                </div>
+                <div class="userLocation">
+                    <div class="locationAndLink">
+                        <img src="./starter-code/assets/icon-location.svg"><a id="location" href=""  style="text-decoration:none">  San Francisco</a>
+                        <br>
+                        <br>
+                        <img src="./starter-code/assets/icon-website.svg"><a id="blog" href="" class="website" style="text-decoration:none">  https://github.blox</a>
+                    </div>
+                    <div class="twiterAndCompany">
+                        <img src="./starter-code/assets/icon-twitter.svg"><a id="twitter" href="" style="text-decoration:none">  Not Available</a>
+                        <br>
+                        <br>
+                        <img src="./starter-code/assets/icon-company.svg"><a id="company" href="" class="company" style="text-decoration:none">  @github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
