@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.theme-light {
+    --color-button: #0079FF;
+    --color-visible: #697C9A;
+    --color-txt-user: #4B6A9B; 
+    --color-txt-bold: #2B3442;
+    --color-body: #F6F8FF;
+    --color-main: #FEFEFE;
+    --color-img: invert(33%) sepia(98%) saturate(261%) hue-rotate(178deg) brightness(97%) contrast(91%);
+    --change-text: "DARK";
+}
+
+.theme-dark {
+    --color-button: #0079FF;
+    --color-visible: #FEFEFE;
+    --color-txt-user: #FEFEFE;
+    --color-txt-bold: #FEFEFE;
+    --color-body: #141D2F;
+    --color-main: #1E2A47;
+    --color-img: brightness(5);
+    --change-text: "LIGHT";
+ }
+ 
+
+body {
+    background-color: var(--color-body);
+    font-family: 'Space Mono';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    padding: 0 30px;
+    margin: 100px auto;
+}
+
+.container {
+    background-color: var(--color-body);
+    max-width: 730px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.change {
+    background-color: var(--color-body);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.finder {
+    color: var(--color-txt-bold);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 39px;
+}
+
+.change-img {
+    color: var(--color-visible);
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    line-height: 19px;
+}
+
+.change-img2 {
+    color: var(--color-visible);
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    line-height: 19px;
+}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.search {
+    background-color: var(--color-main);
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    border-radius: 15px;
+}
+
+.search-img {
+    padding: 20px 15px;
+}
+
+.search input {
+    border: none;
+    width: 83%;
+    height: 69px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: 'Space Mono';
+    color: var(--color-txt-user);
+    border-radius: 5px;
+}
+
+::-webkit-input-placeholder {
+    color: var(--color-txt-user);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.error {
+    display: none;
+    color: red;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 12px;
+}
+
+.input-button {
+    display: flex;
+    width: 100%;
+}
+
+.input-button input {
+    background-color: var(--color-main);
+    color: var(--color-txt-user);
+    outline: none;
+}
+
+.search button {
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--color-button);
+    color: var(--color-main);
+    width: 106px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.search button:hover {
+    background-color: rgba(0, 121, 255, 0.7);
+}
+
+.main {
+    margin-top: 10px;
+    width: 100%;
+    padding: 30px;
+    background: var(--color-main);
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    border-radius: 15px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.top img {
+    border-radius: 50%;
+    width: 117px;
+}
+
+.user h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 39px;
+    color: var(--color-txt-bold);
+}
+
+.user a {
+    font-size: 16px;
+    font-weight: 400;
+    Line-height: 23.7px;
+}
+
+.user h2 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--color-txt-user);
+    margin-top: 25px;
+}
+
+.secound {
+    display: none;
+}
+
+.block {
+    display: none;
+}
+
+.date h2 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--color-txt-user);
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 35px;
+    margin-top: 35px;
+}
+
+
+.userFolow {
+    background-color: var(--color-body);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    width: 76%;
+    border-radius: 10px;
+}
+
+.userFolow h4 {
+    color: var(--color-txt-user);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 8px;
+}
+
+.userFolow p {
+    color: var(--color-txt-bold);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    margin-left: 6px;
+}
+
+.userLocation {
+    width: 84%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content:space-around;
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--color-txt-user);
+}
+
+a {
+    color: var(--color-txt-user);
+}
+
+.userLocation img {
+    filter: var(--color-img);
+}
+
+@media screen and (max-width: 800px) {
+    .secound {
+        display: block;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        color: var(--color-txt-user);
+        margin-top: 25px;
+    }
+
+    .primary {
+        display: none;
+    }
+
+    .date h2 {
+        display: none;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .secound p {
+        padding-left: 30px;
+    }
+
+    .userFolow {
+        width: 100%;
+        justify-content: start;
+        align-items: center;
+        gap: 20%;
+        padding: 10px;
+    }
+
+    .userLocation {
+        width: 100%;
+        justify-content: start;
+        align-items: center;
+        gap: 20%;
+        padding: 10px;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 18px;
+        color: var(--color-txt-user);
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    ::-webkit-input-placeholder {
+        font-size: 13px;
+    }
+
+    .search button {
+        width: 84px;
+        height: 46px;
+    }
+
+    .user h1 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+
+    .user a {
+        font-size: 13px;
+    }
+
+    .block {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 19px;
+        color: var(--color-visible);
+    }
+
+    .secound p {
+        font-size: 13px;
+        font-weight: 400px;
+        line-height: 25px;
+        color: var(--color-txt-user);
+    }
+
+    .userFolow {
+        gap: 5%;
+        padding: 0;
+    }
+
+    .userLocation {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+}
